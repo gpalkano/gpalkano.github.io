@@ -5,8 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
 
-<body class="w3-content" style="max-width:1300px">
 <style>
 html, body, h1, h2, h3, h4, h5, h6 {
   font-family: "Times New Roman";
@@ -14,25 +17,64 @@ html, body, h1, h2, h3, h4, h5, h6 {
 body{font-size: 19px}
 p{margin-right: 1cm;}
 </style>
+<style>
+.button {
+  border: none;
+  color: w3-pale-yellow;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: w3-pale-yellow;
+  color: black;
+  border: 2px solid #000000;
+}
+
+.button1:hover {
+  background-color: #000000;
+  color: white;
+}
+hr.newHR {
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+hr.newHR1 {
+  border: 22px solid black;
+  border-radius: 5px;
+}
+hr.newHR2 {
+  border: 4px solid grey;
+  border-radius: 5px;
+}
+
+</style>
 <!-- First Grid: Logo & About -->
 <div class="w3-row">
   <div class="w3-half w3-black w3-container w3-center" style="height:700px">
-    <div class="w3-padding-64">  
+    <div class="w3-padding-64">
     </div>
+    <h1>Georgios Palkanoglou</h1>
     <div class="w3-padding-64">
       <a href="#" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Home</a>
       <a href="#work" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Projects</a>
-      <a href="#work" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Resume</a>
+      <a href="#work" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">R&eacutesum&eacute</a>
       <a href="#contact" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Contact</a>
     </div>
   </div>
-  <div class="w3-half w3-blue-grey w3-container" style="height:700px">
+  <div class="w3-half w3-black w3-container" style="height:700px">
     <div class="w3-padding-64 w3-center">
       <h1>About</h1>
-      <img src="https://pbs.twimg.com/profile_images/1152009378557550592/DpBzM-Mb.jpg" class="w3-margin w3-circle" alt="Person" style="width:50%">
+      <img src="https://pbs.twimg.com/profile_images/1152009378557550592/DpBzM-Mb.jpg" class="w3-margin w3-circle" alt="Person" style="width:40%">
       <div class="w3-left-align w3-padding-large">
-        <p>Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-        <p>Lorem ipusm sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p>I am a physics Ph.D. student studying nuclear theory at the University of Guelph.</p>
+        <p>Here you can find everything about me.</p>
       </div>
     </div>
   </div>
@@ -47,41 +89,42 @@ p{margin-right: 1cm;}
     </div>
     <div class="w3-row">
       <div class="w3-half">
-        <img src="https://gpalkano.github.io/assets/Neutron_pair_W.jpg" style="width:100%">
+        <img src="https://gpalkano.github.io/assets/img/Neutron_pair_W.jpg" style="width:100%">
       </div>
       <div class="w3-half">
       <p>Connecting the odd-even staggering to the pairing gap in neutron matter. </p>
+	<a href="https://gpalkano.github.io/pairing_discussions.html" class="button button1">Full discussion</a>
       </div>
     </div>
-    <div class="w3-row w3-hide-small">
+    <div class="w3-row">
       <div class="w3-half">
-        <img src="https://gpalkano.github.io/assets/Walkers-page-001.jpg" style="width:100%">
+        <img src="https://gpalkano.github.io/assets/img/Walkers-page-001.jpg" style="width:100%">
       </div>
       <div class="w3-half">
         <p>Clustering of Unitary fermions.</p>
+	<a href="https://gpalkano.github.io/clustering_discussions.html" class="button button1">Full discussion</a>
       </div>
     </div>
 	<br>
-    <p>Here.</p>
   </div>
-  <div class="w3-half w3-orange w3-container" style="min-height:800px">
+  <div class="w3-half w3-orange w3-container" style="min-height:800px;border-radius:5%">
     <div class="w3-padding-64 w3-center">
-      <h2>Resume</h2>
+      <h2>R&eacutesum&eacute</h2>
       <hr>
       <div class="w3-container w3-responsive">
         <table class="w3-table">
           <th>Education</th>
-          <tr>
+          <tr class="w3-pale-yellow">
             <td>2019-</td>
             <td>Ph.D. in Physics</td>
             <td>University of Guelph, Guelph, Canada</td>
           </tr>
-          <tr class="w3-pale-yellow">
+          <tr>
             <td>2018-2019</td>
             <td>M.Sc. in Physics</td>
             <td>University of Guelph, Guelph, Canada</td>
           </tr>
-          <tr class="w3-hide-medium">
+          <tr class="w3-pale-yellow">
             <td>2013-2017</td>
             <td>B.Sc. (Honours) in Physics</td>
             <td>National and Kapodistrian University of Athens, Athens, Greece</td>
@@ -94,7 +137,7 @@ p{margin-right: 1cm;}
           </tr>
           <tr>
           <td>2019-</td>
-          <td>Private Turtor for undergradate Physics
+          <td>Private Tutor for undergradate Physics
           </tr>
           <tr class="w3-pale-yellow">
             <td>2018-</td>
@@ -103,19 +146,23 @@ p{margin-right: 1cm;}
           </tr>
           <tr>
           <td> 2013-2017</td>
-          <td>Private Tutor in Physics, Math, and Geometry
+          <td>Private Tutor for Physics, Math, and Geometry
           </tr>
         </table>
+	<hr>
       </div>
+      <a href="https://gpalkano.github.io/assets/doc/CV.pdf" class="button button1 w3-border-black w3-round-xlarge">CV</a>
     </div>
   </div>
 </div>
 
+<hr class="newHR1">
+
 <!-- Third Grid: Swing By & Contact -->
 <div class="w3-row" id="contact">
-  <div class="w3-half w3-dark-grey w3-container w3-center" style="height:700px">
+  <div class="w3-white w3-container w3-center" style="height:700px">
     <div class="w3-padding-64">
-      <h1>Swing By</h1>
+      <h1>Contact</h1>
     </div>
     <div class="w3-padding-64">
       <p>50 Stone Rd E</p>
@@ -128,34 +175,13 @@ p{margin-right: 1cm;}
       <th>@gpalkano</th>
     </div>
   </div>
-  <div class="w3-half w3-red w3-container" style="height:700px">
-    <div class="w3-padding-64 w3-padding-large">
-      <h1>Contact</h1>
-      <p class="w3-opacity">GET IN TOUCH</p>
-      <form class="w3-container w3-card w3-padding-32 w3-white" action="/action_page.php" target="_blank">
-        <div class="w3-section">
-          <label>Name</label>
-          <input class="w3-input" style="width:100%;" type="text" required name="Name">
-        </div>
-        <div class="w3-section">
-          <label>Email</label>
-          <input class="w3-input" style="width:100%;" type="text" required name="Email">
-        </div>
-        <div class="w3-section">
-          <label>Message</label>
-          <input class="w3-input" style="width:100%;" type="text" required name="Message">
-        </div>
-        <button type="submit" class="w3-button w3-orange w3-right">Send</button>
-      </form>
-    </div>
-  </div>
 </div>
 
 <!-- Footer -->
+<hr class="newHR">
 <footer class="w3-container w3-black w3-padding-16">
   <p>Georgios Palkanoglou | 2020</p>
 </footer>
 
 </body>
 </html>
-

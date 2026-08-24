@@ -22,6 +22,9 @@ i.e., if you can't find Libre Caslon Text, use Times New Roman
     --font-lato: "Lato", "Times New Roman", sans-serif;
     --font-roboto: "Roboto Slab", "Times New Roman", serif;
     --font-roboto-mono: "Roboto Mono", "Times New Roman", monospace;
+    --font-garamond: "EB Garamond", "Times New Roman", serif;
+    --font-mynerve: "Mynerve", "Times New Roman";
+    --font-noto-serif-dis: "Noto Serif Display", "Times New Roman";
     --font-mymono: monospace;
 
     --font-weight-body: 400;
@@ -107,4 +110,17 @@ th {
 .calen-entry {
     text-align: left; 
     vertical-align: baseline;
+}
+
+.gr-tran {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 1ex;
+    line-height: 0.7;
+    /*font-family: var(--font-noto-serif-dis); */
+    font-family: var(--font-noto-serif-dis); 
+    font-style: italic;
+    font-weight: 200; 
+    font-size: 44px;
+    color: var(--color-link);
 }

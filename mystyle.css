@@ -1,0 +1,109 @@
+/* 
+:root contains custom attributes to be used as
+--my-color: #000000
+...
+var(--my-color)
+
+Fallbacks written as:
+--font-serif: "Libre Caslon Text", "Times New Roman"
+i.e., if you can't find Libre Caslon Text, use Times New Roman
+*/
+:root {
+    --color-text:       #1a1a1a;
+    --color-bg:         #f7f0df;
+    --color-shade:      #DCAB77;
+    --color-link:       #D86310;
+    --color-highlight:  #B0CFD7;
+    --color-dark:       #373F68;
+    /*--color-bg:        #f7f0df;*/
+    /*--color-shade:      #d8d2c4;*/
+
+    --font-calson: "Libre Caslon Text", "Times New Roman", serif;
+    --font-lato: "Lato", "Times New Roman", sans-serif;
+    --font-roboto: "Roboto Slab", "Times New Roman", serif;
+    --font-roboto-mono: "Roboto Mono", "Times New Roman", monospace;
+
+    --font-weight-body: 400;
+    --font-size-body: 16px;
+
+    --font-weight-header1: 300;
+    --font-size-header1: 44px;
+
+    --font-weight-header2: 300;
+    --font-size-header2: 32px;
+
+    --font-weight-header3: 700;
+    --font-size-header3: 18px;
+}
+
+body{
+    background: var(--color-bg);
+    color: var(--color-dark);
+}
+
+p {
+    color: var(--color-dark);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-body);
+    font-family: var(--font-lato);
+}
+
+h1 {
+    color: var(--color-dark);
+    font-size: var(--font-size-header1);
+    font-weight: var(--font-weight-header1);
+    font-family: var(--font-roboto);
+    /*background-color: var(--color-shade);*/
+}
+
+h2 {
+    color: var(--color-dark);
+    font-size: var(--font-size-header2);
+    font-weight: var(--font-weight-header2);
+    font-family: var(--font-roboto);
+}
+
+h3 {
+    color: var(--color-dark);
+    font-size: var(--font-size-header3);
+    font-weight: var(--font-weight-header3);
+    font-family: var(--font-roboto);
+}
+
+th {
+    color: var(--color-dark);
+    font-size: 16px;
+    font-weight: var(--font-weight-header3);
+    font-family: var(--font-lato);
+}
+
+.prof {
+    background-color: var(--color-shade);
+}
+
+.calen-future {
+    /*background-color: #cfc9bc; to go with savvas white*/
+    background-color: var(--color-shade);
+}
+
+.calen-present {
+    background-color: var(--color-highlight);
+}
+
+.mylink {
+    color: var(--color-link);
+    font-weight: var(--font-weight-header1);
+}
+
+.years {
+    text-align: left; 
+    font-family: monospace; 
+    font-size: 15px; 
+    vertical-align: baseline;
+    width: 100px;
+}
+
+.calen-entry {
+    text-align: left; 
+    vertical-align: baseline;
+}

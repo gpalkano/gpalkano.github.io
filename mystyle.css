@@ -22,6 +22,7 @@ i.e., if you can't find Libre Caslon Text, use Times New Roman
     --font-lato: "Lato", "Times New Roman", sans-serif;
     --font-roboto: "Roboto Slab", "Times New Roman", serif;
     --font-roboto-mono: "Roboto Mono", "Times New Roman", monospace;
+    --font-mymono: monospace;
 
     --font-weight-body: 400;
     --font-size-body: 16px;
@@ -97,10 +98,10 @@ th {
 
 .years {
     text-align: left; 
-    font-family: monospace; 
+    font-family: var(--font-mymono); 
     font-size: 15px; 
     vertical-align: baseline;
-    width: 100px;
+    width: 120px;
 }
 
 .calen-entry {

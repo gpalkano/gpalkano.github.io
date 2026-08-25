@@ -97,6 +97,9 @@ th {
 .mylink {
     color: var(--color-link);
     font-weight: 400;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 0.4ex;
 }
 
 .years {

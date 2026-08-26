@@ -125,7 +125,11 @@ th {
     font-weight: 200; 
     font-size: 44px;
     color: var(--color-link);
+    @media only screen and (max-width: 500px) {
+        line-height: 0.9;
+    }
 }
+
 
 .paper-title {
     margin-top: 0;

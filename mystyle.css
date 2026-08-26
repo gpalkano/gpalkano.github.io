@@ -126,7 +126,7 @@ th {
     font-size: 44px;
     color: var(--color-link);
     @media only screen and (max-width: 500px) {
-        line-height: 0.9;
+        line-height: 1;
     }
 }
 

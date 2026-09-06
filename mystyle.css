@@ -25,6 +25,7 @@ i.e., if you can't find Libre Caslon Text, use Times New Roman
     --font-garamond: "EB Garamond", "Times New Roman", serif;
     --font-mynerve: "Mynerve", "Times New Roman";
     --font-noto-serif-dis: "Noto Serif Display", "Times New Roman";
+    --font-farsi: "Gulzar";
     --font-mymono: monospace;
 
     --font-weight-body: 400;
@@ -130,6 +131,20 @@ th {
     }
 }
 
+.fa-tran {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 1ex;
+    line-height: 1.;
+    font-family: var(--font-farsi); 
+    font-style: normal;
+    font-weight: 200; 
+    font-size: 44px;
+    color: var(--color-link);
+    @media only screen and (max-width: 500px) {
+        line-height: 1;
+    }
+}
 
 .paper-title {
     margin-top: 0;
